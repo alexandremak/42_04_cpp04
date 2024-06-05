@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 00:02:54 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 21:51:03 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 23:12:12 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ Cat &Cat::operator=(const Cat &otherCat) {
 		<< std::endl;
 	if (this != &otherCat) {
 		this->_type = otherCat._type;
-		this->_brain = otherCat._brain;
+		delete _brain;
+		this->_brain = new Brain(*otherCat._brain);
 	}
 	return (*this);
 }
