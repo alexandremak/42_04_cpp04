@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 23:38:08 by amak              #+#    #+#             */
-/*   Updated: 2024/06/04 00:14:11 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 00:32:35 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,14 @@ Animal::~Animal() {
 		<< std::endl;
 }
 
-std::string	Animal::getType() {
+const std::string	Animal::getType() const {
 	std::cout << RED << "[ANIMAL]: getType() member function called" << RESET
 		<< std::endl;
+	return (this->_type);
+}
+
+void 	Animal::makeSound() const {
+	std::cout << RED << "[ANIMAL]: makeSound() member function called" << RESET
+		<< std::endl;
+	std::cout << "* SOME KIND OF ANIMAL NOISE * " << std::endl;
 }

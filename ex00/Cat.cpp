@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 00:02:54 by amak              #+#    #+#             */
-/*   Updated: 2024/06/04 00:17:29 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 00:33:28 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Cat::Cat() : Animal() {
 	this->_type = "Cat";
 }
 
-Cat::Cat(const Cat &otherCat) {
+Cat::Cat(const Cat &otherCat) : Animal() {
 	std::cout << BLUE << "[CAT]: Copy constructed called" << RESET
 		<< std::endl;
 	*this = otherCat;
@@ -37,8 +37,8 @@ Cat::~Cat() {
 		<< std::endl;
 }
 
-void	Cat::makeSound() {
+void	Cat::makeSound() const {
 	std::cout << BLUE << "[CAT]: makeSound() member function called" << RESET
 		<< std::endl;
-	std::cout << "Meow!" << std::endl;
+	std::cout << "* MEOW MEOW *" << std::endl;
 }

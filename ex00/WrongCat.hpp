@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 23:46:51 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 00:32:49 by amak             ###   ########.fr       */
+/*   Created: 2024/06/05 00:47:31 by amak              #+#    #+#             */
+/*   Updated: 2024/06/05 01:21:47 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#ifndef WRONGCAT_HPP
+# define WRONGCAT_HPP
 
 # include <iostream>
-# include "Animal.hpp"
+# include "WrongAnimal.hpp"
 
-const std::string GREEN = "\033[32m";
+const std::string MAGENTA = "\033[35m";
 
-class Dog : public Animal {
+class WrongCat : public WrongAnimal {
 	public:
-		Dog();
-		Dog(const Dog &otherDog);
-		Dog &operator=(const Dog &otherDog);
-		~Dog();
+		WrongCat();
+		WrongCat(const WrongCat &otherWrongCat);
+		WrongCat &operator=(const WrongCat &otherWrongCat);
+		~WrongCat();
 
 		void	makeSound() const;
 };

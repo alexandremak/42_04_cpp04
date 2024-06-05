@@ -6,7 +6,7 @@
 #    By: amak <amak@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/03 22:54:27 by amak              #+#    #+#              #
-#    Updated: 2024/06/03 22:55:05 by amak             ###   ########.fr        #
+#    Updated: 2024/06/05 01:04:11 by amak             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,8 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SOURCES =	Animal.cpp \
 			Dog.cpp \
 			Cat.cpp \
+			WrongAnimal.cpp \
+			WrongCat.cpp \
 			main.cpp
 			
 OBJECTS = $(SOURCES:.cpp=.o)

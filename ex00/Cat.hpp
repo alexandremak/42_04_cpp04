@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 00:02:33 by amak              #+#    #+#             */
-/*   Updated: 2024/06/04 00:16:39 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 00:33:05 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Cat : public Animal {
 		Cat &operator=(const Cat &otherCat);
 		~Cat();
 
-		void	makeSound();
+		void	makeSound() const;
 };
 
 #endif
