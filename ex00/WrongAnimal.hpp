@@ -14,6 +14,7 @@
 # define WRONGANIMAL_HPP
 
 # include <iostream>
+# include <string> 
 
 const std::string WRESET = "\033[0m";
 const std::string YELLOW = "\033[33m";
