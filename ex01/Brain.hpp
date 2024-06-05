@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 02:09:41 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 02:48:45 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 21:39:40 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@
 # include <iostream>
 # include <string>
 
+# define NR_IDEIAS 100
+
 const std::string BRESET = "\033[0m";
 const std::string CYAN = "\033[36m";
 
 class Brain {
 	protected:
-		std::string ideas[100];
+		std::string ideas[NR_IDEIAS];
 
 	public:
 		Brain();

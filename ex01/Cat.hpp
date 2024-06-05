@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 00:02:33 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 00:33:05 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 21:49:31 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,14 @@
 
 # include <iostream>
 # include "Animal.hpp"
+# include "Brain.hpp"
 
 const std::string BLUE = "\033[34m";
 
 class Cat : public Animal {
+	private:
+		Brain *_brain;
+
 	public:
 		Cat();
 		Cat(const Cat &otherCat);

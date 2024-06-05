@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 02:27:09 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 02:48:58 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 22:43:35 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ Brain::Brain(const Brain &otherBrain) {
 }
 
 Brain &Brain::operator=(const Brain &otherBrain) {
-	std::cout << CYAN << "[BRAIN]: Coppy assignment constructed called"
+	std::cout << CYAN << "[BRAIN]: Copy assignment constructed called"
 		<< BRESET << std::endl;
 	if (this != &otherBrain)
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < NR_IDEIAS; i++) {
 			this->ideas[i] = otherBrain.ideas[i];
 		}
 	return (*this); 
