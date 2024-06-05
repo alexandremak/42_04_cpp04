@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:56:43 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 00:26:17 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 03:15:19 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define ANIMAL_HPP
 
 # include <iostream>
+# include <string>
 
 const std::string RESET = "\033[0m";
 const std::string RED = "\033[31m";
