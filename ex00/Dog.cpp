@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 23:50:09 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 00:33:49 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 21:35:37 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,7 @@ Dog &Dog::operator=(const Dog &otherDog) {
 }
 
 Dog::~Dog() {
-	std::cout << GREEN << "[DOG]: Destructor called" << RESET
-		<< std::endl;
+	std::cout << GREEN << "[DOG]: Destructor called" << RESET << std::endl;
 }
 
 void	Dog::makeSound() const {

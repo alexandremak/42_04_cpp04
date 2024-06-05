@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 00:02:54 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 00:33:28 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/05 21:35:47 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,7 @@ Cat &Cat::operator=(const Cat &otherCat) {
 }
 
 Cat::~Cat() {
-	std::cout << BLUE << "[CAT]: Destructor called" << RESET
-		<< std::endl;
+	std::cout << BLUE << "[CAT]: Destructor called" << RESET << std::endl;
 }
 
 void	Cat::makeSound() const {
