@@ -6,19 +6,19 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 00:02:54 by amak              #+#    #+#             */
-/*   Updated: 2024/06/06 21:41:40 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/06 21:49:47 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat() : Animal(), _brain(new Brain()){
+Cat::Cat() : Animal(), _brain(new Brain()) {
 	std::cout << BLUE << "[CAT]: Default constructed called" << RESET
 		<< std::endl;
 	this->_type = "Cat";
 }
 
-Cat::Cat(const Cat &otherCat) : Animal(), _brain(new Brain()){
+Cat::Cat(const Cat &otherCat) : Animal(), _brain(new Brain()) {
 	std::cout << BLUE << "[CAT]: Copy constructed called" << RESET
 		<< std::endl;
 	*this = otherCat;
