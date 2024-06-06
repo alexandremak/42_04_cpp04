@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 00:17:48 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 01:31:23 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/06 21:01:59 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,17 +37,21 @@ int main()
 
 	const	WrongAnimal* nova = new WrongAnimal();
 	const	WrongAnimal* k = new WrongCat();
+	const	WrongCat* l = new WrongCat();
 
 	std::cout << k->getType() << " " << std::endl;
+	std::cout << l->getType() << " " << std::endl;
 
 	nova->makeSound();
 	k->makeSound();
 	std::cout << "NOTE: output of WrongAnimal makeSound() member function"
 		<< std::endl;
+	l->makeSound();
 
 	delete nova;
 	delete k;
 	std::cout << "NOTE: didn't call the WrongCat destructor" << std::endl;
+	delete l;
 
 	return 0;
 }
