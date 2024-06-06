@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 21:55:16 by amak              #+#    #+#             */
-/*   Updated: 2024/06/06 21:30:47 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/06 21:44:36 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,33 +30,37 @@ int main() {
 		delete animals[i];
 	}
 
-	std::cout << std::endl << "--------- DOG ---------" << std::endl;
+	{
+		std::cout << std::endl << "--------- DOG ---------" << std::endl;
 
-	Dog	*originalDog = new Dog();
-	
-	std::cout << "begin" << std::endl;
-	Dog	copiedDog(*originalDog);
-	std::cout << "end" << std::endl;
+		Dog	*originalDog = new Dog();
+		
+		std::cout << "begin" << std::endl;
+		Dog	copiedDog(*originalDog);
+		std::cout << "end" << std::endl;
 
-	const Dog *ptrDog = originalDog;
-	
-	ptrDog->makeSound();
+		const Dog *ptrDog = originalDog;
+		
+		ptrDog->makeSound();
 
-	delete ptrDog;
+		delete ptrDog;
+	}
 
-	std::cout << std::endl << "--------- CAT ---------" << std::endl;
+	{
+		std::cout << std::endl << "--------- CAT ---------" << std::endl;
 
-	Cat	*originalCat = new Cat();
-	
-	std::cout << "begin" << std::endl;
-	Cat	copiedCat(*originalCat);
-	std::cout << "end" << std::endl;
+		Cat	*originalCat = new Cat();
+		
+		std::cout << "begin" << std::endl;
+		Cat	copiedCat(*originalCat);
+		std::cout << "end" << std::endl;
 
-	const Dog *ptrCat = originalDog;
-	
-	ptrCat->makeSound();
+		const Cat *ptrCat = originalCat;
+		
+		ptrCat->makeSound();
 
-	delete ptrCat;
+		delete ptrCat;
+	}
 
 	return 0;
 }
