@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 21:55:16 by amak              #+#    #+#             */
-/*   Updated: 2024/06/06 21:14:30 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/06 21:30:47 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,20 +30,33 @@ int main() {
 		delete animals[i];
 	}
 
-	std::cout << "------------------" << std::endl;
+	std::cout << std::endl << "--------- DOG ---------" << std::endl;
 
-	Dog	*originalDog;
+	Dog	*originalDog = new Dog();
 	
 	std::cout << "begin" << std::endl;
-	originalDog = new Dog();
 	Dog	copiedDog(*originalDog);
 	std::cout << "end" << std::endl;
 
-	const Dog *originalPtr = originalDog;
+	const Dog *ptrDog = originalDog;
 	
-	originalPtr->makeSound();
+	ptrDog->makeSound();
 
-	delete originalPtr;
+	delete ptrDog;
+
+	std::cout << std::endl << "--------- CAT ---------" << std::endl;
+
+	Cat	*originalCat = new Cat();
+	
+	std::cout << "begin" << std::endl;
+	Cat	copiedCat(*originalCat);
+	std::cout << "end" << std::endl;
+
+	const Dog *ptrCat = originalDog;
+	
+	ptrCat->makeSound();
+
+	delete ptrCat;
 
 	return 0;
 }
