@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 21:55:16 by amak              #+#    #+#             */
-/*   Updated: 2024/06/05 22:44:41 by amak             ###   ########.fr       */
+/*   Updated: 2024/06/06 21:14:30 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,12 @@ int main() {
 
 	std::cout << "------------------" << std::endl;
 
-  	Dog	*originalDog = new Dog();
-  	Dog	copiedDog(*originalDog);
+	Dog	*originalDog;
+	
+	std::cout << "begin" << std::endl;
+	originalDog = new Dog();
+	Dog	copiedDog(*originalDog);
+	std::cout << "end" << std::endl;
 
 	const Dog *originalPtr = originalDog;
 	
